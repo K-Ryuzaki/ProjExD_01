@@ -11,6 +11,9 @@ def main():
     #こうかとんの画像読み込み
     koukaton = pg.transform.flip(koukaton, True, False)
     #こうかとん反転
+    kaiten= pg.transform.rotozoom(koukaton,10,1.0)
+    #こうかとん回転
+    kkflip=[koukaton,kaiten]
     tmr = 0
     while True:
         for event in pg.event.get():
